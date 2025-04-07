@@ -1,13 +1,10 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
-// Используем имя репозитория для базового пути GitHub Pages
-// Замените 'YOUR_REPO_NAME' на имя вашего репозитория
-const repoName = "softline-career"; // или другое имя, которое вы выберете
+const repoName = "softline-career"; 
 
 export default defineConfig({
   root: "src",
-  // Для GitHub Pages нужно использовать относительный путь или имя репозитория
   base: process.env.NODE_ENV === "production" ? `/${repoName}/` : "./",
   build: {
     outDir: "../dist",
