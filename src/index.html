@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softline</title>
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <img src="img/l1.png" alt="Softline" width="141" height="31" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#">Облачные решения</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Кибербезопасность</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Импортозамещение</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Цифровая трансформация</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Softline</h1>
+            <p class="hero__description">
+              Ведущий поставщик IT-решений и сервисов.* Мы предлагаем
+              комплексные IT-решения, облака, программное и аппаратное
+              обеспечение, решения по цифровой трансформации и
+              кибербезопасности, а также широкий спектр IT-услуг.
+            </p>
+            <div class="hero__stats">
+              <div class="hero__stat-item">
+                <div class="hero__stat-value">&gt;30 лет</div>
+                <div class="hero__stat-label">на IT-рынке</div>
+              </div>
+              <div class="hero__stat-item">
+                <div class="hero__stat-value">4600</div>
+                <div class="hero__stat-label">сотрудников в России</div>
+              </div>
+              <div class="hero__stat-item">
+                <div class="hero__stat-value">25</div>
+                <div class="hero__stat-label">городов России</div>
+              </div>
+              <div class="hero__stat-item">
+                <div class="hero__stat-value">
+                  2000<span class="plus">+</span>
+                </div>
+                <div class="hero__stat-label">разработчиков</div>
+              </div>
+              <div class="hero__stat-item">
+                <div class="hero__stat-value">
+                  3000<span class="plus">+</span>
+                </div>
+                <div class="hero__stat-label">
+                  сотрудников ежегодно<br />проходят оценку и обучение
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__map">
+            <div class="hero__map-tabs">
+              <div class="hero__map-select">
+                <button class="hero__map-current">
+                  <span>Офисы Softline</span>
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                    <path
+                      d="M1 1L5 5L9 1"
+                      stroke="#444444"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="hero__map-dropdown">
+                  <button class="active" data-region="all">Все</button>
+                  <button data-region="moscow">Москва</button>
+                  <button data-region="center">Центр</button>
+                  <button data-region="northwest">Северо-Запад</button>
+                  <button data-region="south">Юг</button>
+                  <button data-region="volga">Волга</button>
+                  <button data-region="ural">Урал</button>
+                  <button data-region="siberia">Сибирь</button>
+                  <button data-region="east">Дальний восток</button>
+                </div>
+              </div>
+              <div class="hero__map-nav">
+                <button class="hero__map-btn active" data-region="all">
+                  Все
+                </button>
+                <button class="hero__map-btn" data-region="moscow">
+                  Москва
+                </button>
+                <button class="hero__map-btn" data-region="center">
+                  Центр
+                </button>
+                <button class="hero__map-btn" data-region="northwest">
+                  Северо-Запад
+                </button>
+                <button class="hero__map-btn" data-region="south">Юг</button>
+                <button class="hero__map-btn" data-region="volga">Волга</button>
+                <button class="hero__map-btn" data-region="ural">Урал</button>
+                <button class="hero__map-btn" data-region="siberia">
+                  Сибирь
+                </button>
+                <button class="hero__map-btn" data-region="east">
+                  Дальний восток
+                </button>
+              </div>
+            </div>
+            <div class="hero__map-container">
+              <div class="hero__map-bg">
+                <img
+                  src="img/map1.png"
+                  alt="Карта России"
+                  class="hero__map-image"
+                />
+              </div>
+              <div class="hero__map-cities"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections-wrapper">
+        <section class="mission">
+          <div class="container mission__container">
+            <h2 class="mission__title">Миссия Softline</h2>
+            <p class="mission__text">
+              Мы помогаем организациям трансформироваться, работать эффективно и
+              безопасно в условиях цифровой экономики.
+            </p>
+          </div>
+        </section>
+
+        <section class="business">
+          <div class="container business__container">
+            <h2 class="business__title">Направления бизнеса</h2>
+            <div class="business__grid">
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img src="img/b1.png" alt="Решения Softline" />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">Решения Softline</h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    ГК Softline предлагает клиентам собственную линейку
+                    оборудования (ПК, серверы, торговое оборудование и проч.),
+                    разработку программных продуктов, облачных решений, решений
+                    в области информационной безопасности.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img src="img/b2.png" alt="Кибербезопасность" />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">Кибербезопасность</h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    Softline обладает всеми необходимыми государственными
+                    лицензиями для организации проектов по информационной
+                    безопасности и аттестации объектов информатизации.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img src="img/b3.png" alt="Импортозамещение" />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">Импортозамещение</h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    ГК Softline обладает широчайшим портфелем решений и услуг
+                    для импортозамещения, включая ПО и оборудование собственного
+                    производства.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img src="img/b4.png" alt="Облачные решения" />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">Облачные решения</h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    Softline использует современные облачные решения как
+                    российских, так и международных вендоров для масштабирования
+                    бизнеса своих клиентов. Подходы и модели перехода в облако.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img
+                    src="img/b5.png"
+                    alt="Цифровая трансформация и разработка ПО"
+                  />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">
+                    Цифровая трансформация<br />и разработка ПО
+                  </h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    Softline использует современные технологии и новые
+                    возможности для увеличения производительности бизнеса
+                    заказчика. В штате ГК Softline - 2000+ разработчиков,
+                    которые трансформируют ПО под нужды конкретного предприятия.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="business__card">
+                <div class="business__card-image">
+                  <img src="img/b6.png" alt="Техническая поддержка Softline" />
+                </div>
+                <div class="business__card-content">
+                  <h3 class="business__card-title">
+                    Техническая поддержка Softline
+                  </h3>
+                  <div class="business__card-arrow"></div>
+                  <p class="business__card-description">
+                    200+ инженеров, 24/7 доступность, полное соответствие SLA,
+                    персональный менеджер для крупных проектов.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="compensation">
+          <div class="container compensation__container">
+            <h2 class="compensation__title">Компенсационный пакет</h2>
+
+            <div class="compensation__benefits">
+              <div class="compensation__item">
+                <div class="compensation__icon">
+                  <img src="img/c1.png" alt="ДМС" />
+                </div>
+                <div class="compensation__name">ДМС</div>
+              </div>
+              <div class="compensation__item">
+                <div class="compensation__icon">
+                  <img src="img/c2.png" alt="Выходной в день рождения" />
+                </div>
+                <div class="compensation__name">
+                  Выходной<br />в день рождения
+                </div>
+              </div>
+              <div class="compensation__item">
+                <div class="compensation__icon">
+                  <img src="img/c3.png" alt="Корпоративная мобильная связь" />
+                </div>
+                <div class="compensation__name">
+                  Корпоративная<br />мобильная связь
+                </div>
+              </div>
+              <div class="compensation__item">
+                <div class="compensation__icon">
+                  <img src="img/c4.png" alt="Корпоративные скидки на спорт" />
+                </div>
+                <div class="compensation__name">
+                  Корпоративные скидки<br />на спорт
+                </div>
+              </div>
+              <div class="compensation__item">
+                <div class="compensation__icon">
+                  <img src="img/c5.png" alt="LTI" />
+                </div>
+                <div class="compensation__name">LTI</div>
+              </div>
+            </div>
+
+            <div class="compensation__motivation">
+              <h3 class="compensation__subtitle">
+                Программа дополнительной мотивации
+              </h3>
+              <div class="compensation__bonus">доплата 12% от суммы</div>
+
+              <div class="compensation__extras">
+                <div class="compensation__item">
+                  <div class="compensation__icon">
+                    <img src="img/c6.png" alt="Оргтехника" />
+                  </div>
+                  <div class="compensation__name">Оргтехника</div>
+                </div>
+                <div class="compensation__item">
+                  <div class="compensation__icon">
+                    <img src="img/c1.png" alt="ДМС" />
+                  </div>
+                  <div class="compensation__name">ДМС</div>
+                </div>
+                <div class="compensation__item">
+                  <div class="compensation__icon">
+                    <img src="img/c7.png" alt="Ипотека" />
+                  </div>
+                  <div class="compensation__name">Ипотека</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="corporate">
+          <div class="container corporate__container">
+            <div class="corporate__header">
+              <h2 class="corporate__title">Корпоративная жизнь</h2>
+              <div class="corporate__nav">
+                <button
+                  class="corporate__nav-btn js-slider-prev"
+                  aria-label="Предыдущий слайд"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 18L9 12L15 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button
+                  class="corporate__nav-btn js-slider-next"
+                  aria-label="Следующий слайд"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="corporate__slider">
+              <div class="corporate__track" aria-live="polite">
+                <div
+                  class="corporate__slide"
+                  id="slide-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-1"
+                >
+                  <img src="img/s1.png" alt="Корпоративное мероприятие 1" />
+                </div>
+                <div
+                  class="corporate__slide"
+                  id="slide-2"
+                  role="tabpanel"
+                  aria-labelledby="tab-2"
+                >
+                  <img src="img/s2.png" alt="Корпоративное мероприятие 2" />
+                </div>
+                <div
+                  class="corporate__slide"
+                  id="slide-3"
+                  role="tabpanel"
+                  aria-labelledby="tab-3"
+                >
+                  <img src="img/s3.png" alt="Корпоративное мероприятие 3" />
+                </div>
+                <div
+                  class="corporate__slide"
+                  id="slide-4"
+                  role="tabpanel"
+                  aria-labelledby="tab-4"
+                >
+                  <img src="img/s4.png" alt="Корпоративное мероприятие 4" />
+                </div>
+                <div
+                  class="corporate__slide"
+                  id="slide-5"
+                  role="tabpanel"
+                  aria-labelledby="tab-5"
+                >
+                  <img src="img/s5.png" alt="Корпоративное мероприятие 5" />
+                </div>
+              </div>
+              <div
+                class="corporate__indicators"
+                role="tablist"
+                aria-label="Индикаторы слайдов"
+              >
+                <button
+                  class="corporate__indicator active"
+                  role="tab"
+                  id="tab-1"
+                  aria-selected="true"
+                  aria-controls="slide-1"
+                >
+                  <span class="visually-hidden">Перейти к слайду 1</span>
+                </button>
+                <button
+                  class="corporate__indicator"
+                  role="tab"
+                  id="tab-2"
+                  aria-selected="false"
+                  aria-controls="slide-2"
+                >
+                  <span class="visually-hidden">Перейти к слайду 2</span>
+                </button>
+                <button
+                  class="corporate__indicator"
+                  role="tab"
+                  id="tab-3"
+                  aria-selected="false"
+                  aria-controls="slide-3"
+                >
+                  <span class="visually-hidden">Перейти к слайду 3</span>
+                </button>
+                <button
+                  class="corporate__indicator"
+                  role="tab"
+                  id="tab-4"
+                  aria-selected="false"
+                  aria-controls="slide-4"
+                >
+                  <span class="visually-hidden">Перейти к слайду 4</span>
+                </button>
+                <button
+                  class="corporate__indicator"
+                  role="tab"
+                  id="tab-5"
+                  aria-selected="false"
+                  aria-controls="slide-5"
+                >
+                  <span class="visually-hidden">Перейти к слайду 5</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
