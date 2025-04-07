@@ -11,7 +11,7 @@
 
 ## Демо
 
-Проект размещен на GitHub Pages: [Демо-версия сайта](https://YOUR_USERNAME.github.io/softline-career/)
+Проект размещен на GitHub Pages: [Демо-версия сайта](https://DUHO3ABP52.github.io/softline-career/)
 
 ## Функциональность
 
@@ -32,7 +32,7 @@
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/YOUR_USERNAME/softline-career.git
+git clone https://github.com/DUHO3ABP52/softline-career.git
 
 # Перейти в каталог проекта
 cd softline-career
@@ -59,4 +59,4 @@ src/
 
 ## Автор
 
-YOUR_NAME - [GitHub](https://github.com/YOUR_USERNAME)
+DUHO3ABP52 - [GitHub](https://github.com/DUHO3ABP52)
